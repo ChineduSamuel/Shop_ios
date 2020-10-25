@@ -1,0 +1,148 @@
+:root{
+ --primaryColor: #f1f1f1;
+ --black: #222;
+ --black2: #555;
+ --black3: #252525;
+ --black4: #000;
+ --black5: #212529;
+ --orange: #eb0028;
+ --orange2: #F0A93B;
+ --white: #fff;
+ --grey: #959595;
+ --grey2: #666;
+ --grey3: #ccc;
+ --secondaryColor: #2b1f4d;
+ --yellow: #ffcc00;
+ --green: #59b210;  
+ --purple: #C14FD6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-weight: 62.5%;
+    box-sizing: border-box;
+}
+body,input{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+}
+.header{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* ======Navigation======== */
+
+.navigation{
+  position: relative;
+  height: 7rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);  
+}
+
+.scroll-link{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.nav_logo{
+    font-size: 2.5rem;
+    color: var(--black4 );
+    padding: 1.6rem;
+    font-weight: 700;
+}
+
+.nav_hamburger{
+    display: none;
+    cursor: pointer;
+}
+.nav_hamburger .menu_icons{
+    height: 3.3rem;
+    width: 5.3rem;
+}
+.menu_top{
+    display: none;
+}
+.nav_menu{
+    width: 50%;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.nav_item:not(:last-child){
+    margin-right: 1.6rem;
+    
+}
+
+.nav_list .nav_link:link, 
+.nav_list .nav_link:visited{
+    display: inline-block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: color .3s ease-in-out;
+    text-decoration: none;
+    list-style: none;
+    
+}
+ul, li{
+    list-style: none;
+}
+
+
+.nav_list .nav_link:link:hover{
+    color: var(--orange2);   
+}
+.nav_icons{
+    display: flex;
+    position: relative;
+}
+.nav_icons .icon_item .menu_icons{
+    width: 1.6rem;
+    height: 1.6rem;
+    
+}
+.nav_icons .icon_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.nav_icons .icon_item:link,
+.nav_icons .icon_item:visited{
+    color: var(--black);
+}
+
+.nav_icons .icon_item:link:hover{
+    background-color: var(--orange2);
+   color: white;
+}
