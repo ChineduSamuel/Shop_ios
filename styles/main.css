@@ -14,7 +14,7 @@
  --secondaryColor: #2b1f4d;
  --yellow: #ffcc00;
  --green: #59b210;  
- --purple: #C14FD6;
+ --purple: #BC47FA; 
 }
 *{
     margin: 0;
@@ -114,7 +114,7 @@ ul, li{
 
 
 .nav_list .nav_link:link:hover{
-    color: var(--orange2);   
+    color: var(--purple);   
 }
 .nav_icons{
     display: flex;
@@ -143,6 +143,6 @@ ul, li{
 }
 
 .nav_icons .icon_item:link:hover{
-    background-color: var(--orange2);
+    background-color: var(--purple);
    color: white;
 }
