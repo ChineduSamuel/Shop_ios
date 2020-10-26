@@ -35,6 +35,9 @@ body,input{
     position: relative;
 }
 
+.nav_logo .scroll-link{
+    color: var(--orange);
+}
 .container{
     width: 100%;
     max-width: 117rem;
@@ -146,3 +149,19 @@ ul, li{
     background-color: var(--purple);
    color: white;
 }
+
+.nav_icons .icon_item:not(:last-child){
+    margin-right: 1rem;
+}
+
+.nav_icons #cart_total{
+    font-size: 1rem;
+    position: absolute;
+    top: 2px;
+    right: -6px;
+    background-color: var(--orange);
+    padding: .2rem .4rem;
+    border-radius: 100%;
+    color: var(--primaryColor);
+}
+
