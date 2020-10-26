@@ -165,3 +165,67 @@ ul, li{
     color: var(--primaryColor);
 }
 
+/* ==============NAVIGATION MEDIA QUERRY========== */
+@media only screen and (max-width: 780px){
+.nav_menu{
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    width: 0;
+    background-color: var(--white);
+    z-index: 9990;
+    height: 100%;
+    transition: all .3s;
+}
+.nav_menu.open{
+    left: 0rem;
+    width: 30rem;
+}
+.nav_logo{
+    width: 50%;
+}
+.nav_hamburger{
+    display: block;
+}
+
+.menu_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--orange);
+    padding: 1.8rem 1rem;
+}
+
+.menu_top .menu_icons{
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: var(--primaryColor);
+}
+
+.nav_category{
+    color: var(--white);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.nav_list{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16rem 1rem;
+}
+
+.nav_item:not(:last-child){
+    margin-right: 0;
+}
+
+.nav_item{
+  width: 100%;  
+}
+
+.nav_list .nav_link:link,
+.nav_list .nav_link:link:visited{
+   padding: 1.6rem 0;
+   width: 100%;
+   color: var(--orange2); 
+}
+}
